@@ -1,9 +1,17 @@
 # windaq_lib
 This is a library for using windaq files with MATLAB. Currently, only reading windaq files into MATLAB is supported. I wrote this because other windaq readers I tried could not read the data trailer, which contains important event markers often logged during data acquistion. `windaq_read` is a "complete" windaq reader, so it should read everything.
 
-To read a windaq file, simply call `windaq_read`:
+# Installation instructions:
+```
+git clone https://github.com/justinblaber/windaq_lib.git
 
-`>> test_wdq = windaq_read('test.wdq');`
+```
+Then, in MATLAB:
+
+```
+>> addpath(windaq_lib);
+>> test_wdq = windaq_read('test.wdq');
+```
 
 The output should look like:
 
