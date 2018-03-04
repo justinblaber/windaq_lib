@@ -9,7 +9,7 @@ git clone https://github.com/justinblaber/windaq_lib.git
 Then, in MATLAB:
 
 ```
->> addpath(windaq_lib);
+>> addpath('windaq_lib');
 >> test_wdq = windaq_read('test.wdq');
 ```
 
